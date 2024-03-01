@@ -1,0 +1,121 @@
+:root {
+    --main-color: #17a2b8;
+    --black: #343a40;
+    --white: #fff;
+    --todo-content-color: #acc5c5;
+    --action-btn-color: #007bff;
+    --remove-btn: #dc3545;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    transition: .5s ease;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.todo-main {
+    width: 600px;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.header {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-text {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 7px;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+#add-btn {
+    padding: 0 1.5rem;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    opacity: 0.7;
+}
+
+#add-btn:active {
+    opacity: 0.5;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.todo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--todo-content-color);
+    padding: 0.5rem 0.5rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+.done {
+    width: 1rem;
+    height: 1rem;
+}
+
+.todo-content {
+    width: 60%;
+    max-width: 60%;
+    background-color: var(--todo-content-color);
+    border: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 10px;
+    /* text-decoration-line: line-through; */
+}
+
+.btn {
+    padding: 7px 9px;
+    color: var(--white);
+    background-color: var(--action-btn-color);
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn:active {
+    opacity: 0.4;
+}
+
+.remove {
+    background-color: var(--remove-btn);
+}
